@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+
+      width: 130px;
+      height: 130px;
+
+      background-image: url("img/bike.png");
+      background-repeat: no-repeat;
+
+      animation: bikeAni .5s infinite steps(32);
+    }
+
+    @keyframes bikeAni {
+      0% {
+        background-position: 0px 0px;
+      }
+      100% {
+        background-position: 0px -4160px;
+      }
+    }
+
+    body {
+      background-color: rgba(1,1,1,0.2) ;
+    }
+  </style>
+
+</head>
+<body>
+<div id="box"></div>
+</body>
+<script type="text/javascript">
+  window.onload = function () {
+    var box = document.getElementById('box');
+  }
+</script>
+
+</html>
