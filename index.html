@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width"/>
+
   <title>Title</title>
 
   <link rel="stylesheet" href="css/style.css">
@@ -15,8 +17,8 @@
 
 <div class="cover" id="cover">
   <h1>Please Click To Get In</h1>
-  <h2>Auther:Mario  Email:739880760@qq.com</h2>
-  <div class="ghost">
+  <h2>Auther:Mario Email:739880760@qq.com</h2>
+  <div class="ghost" id="ghost">
     <div class="body">
       <div class="face">
         <div class="eye left"></div>
@@ -126,8 +128,9 @@
   let real = document.querySelector(".realPage")
   cover.onclick = function () {
     console.log(1)
-//    this.style.opacity = 0
-    this.style.display = "none"
+    this.style.opacity = 0
+
+//    this.style.display = "none"
     real.style.display = "block"
   }
 
